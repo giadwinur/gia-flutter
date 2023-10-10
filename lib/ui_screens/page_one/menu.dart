@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:html' as html;
 
 class Menu extends StatelessWidget {
   const Menu({super.key});
@@ -18,7 +19,9 @@ class Menu extends StatelessWidget {
 
         const Spacer(),
         MaterialButton(
-          onPressed: () {},
+          onPressed: () {
+            html.window.open('https://github.com/giadwinur/gia-flutter', 'new tab');
+          },
           color: Colors.lightBlueAccent,
           splashColor: Colors.white,
           padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 10),
